@@ -37,6 +37,7 @@ export default function SetTheme() {
 		const themeSystem       = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 
 		return ( themeLocalStorage ?? themeSystem )
+		//return 'dark' // Hardcoding dark as default
 	}
 
 	useEffect( () => {

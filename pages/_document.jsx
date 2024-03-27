@@ -1,6 +1,7 @@
 // Default core packages
 import { Html, Head, Main, NextScript } from 'next/document'
 
+
 /**
  * Load custom scripts in <Head>
  * 
@@ -17,6 +18,7 @@ export default function Document() {
 				<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
 				<meta name="msapplication-TileColor" content="#da532c" />
 				<meta name="theme-color" content="#ffffff" />
+				
 			</Head>
 			<body>
 				<Main />

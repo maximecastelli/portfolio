@@ -28,14 +28,14 @@ export default function About() {
 		<Section classProp={about.section}>	
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
-					title="About Me"
+					title="Hey 👋"
 					preTitle="Synopsis"
 					subTitle="With a diverse skill set that includes UX design, UI design, full stack development, operational architecture, systems design, photography, and branding, I am a well-rounded digital professional."
 				/>
 				<section className={about.content}>
 					<div className={about.image}>
-						<img src="/img/family-photo.jpg" alt="Nelson family photo"/>
-						{/* <Image src="/img/family-photo.jpg" width={600} height={800}/> */}
+						<img src="/img/portrait2.jpg" alt="Maxime portrait"/>
+						{/* <Image src="/img/family-photo.jpg" width={600} height={800}/> */}  
 					</div>
 					<div className={about.copy} >
 						<CopyBlock 

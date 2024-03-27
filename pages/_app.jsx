@@ -18,6 +18,17 @@ import "@fontsource/inter/400.css"
 import "@fontsource/inter/700.css"
 import "@fontsource/inter/800.css"
 
+import localFont from 'next/font/local'
+
+const SangBleuEmpire = localFont({ src: '../public/fonts/SangBleu/SangBleuEmpire-Black.otf'})
+
+/*
+  @font-face {
+    font-family: 'type';
+    src: url('../assets/fonts/SangBleu/SangBleuEmpire-Black.otf') format('opentype');
+  }
+*/
+
 // Devicon import (https://github.com/devicons/devicon)
 import '../node_modules/devicon/devicon.min.css'
 
@@ -36,7 +47,7 @@ export default function MyApp({ Component, pageProps }) {
 	return (
 		<>
 		<LazyMotion features={domAnimation}>
-			<Layout>
+			<Layout className={SangBleuEmpire.className}>
 				<Component {...pageProps} />
 				<SetGridGap />
 				<Analytics />
