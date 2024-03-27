@@ -1,7 +1,7 @@
 {
 	"intro": {
-		"start": "const Andrew = ( name, passion ) =>",
-		"end": "Hello, my name is",
+		"start": "Hey 👋",
+		"end": "My name is",
 		"speed": 60,
 		"deletionSpeed": 80,
 		"wrapper": "h2",

@@ -12,6 +12,9 @@ import Layout from '../components/layout/layout'
 import "../node_modules/the-new-css-reset/css/reset.css"
 
 // Fontsource local font import (https://github.com/fontsource/fontsource)
+
+import "@fontsource-variable/familjen-grotesk"
+
 import "@fontsource/fira-code/400.css"
 import "@fontsource/fira-code/600.css"
 import "@fontsource/inter/400.css"
@@ -20,7 +23,7 @@ import "@fontsource/inter/800.css"
 
 import localFont from 'next/font/local'
 
-const SangBleuEmpire = localFont({ src: '../public/fonts/SangBleu/SangBleuEmpire-Black.otf'})
+const SangBleuEmpire = localFont({ src: [{path:'../public/fonts/SangBleu/SangBleuEmpire-Black-WebTrial.woff', style:'normal'},{path:'../public/fonts/SangBleu/SangBleuEmpireTrial-BlackItalic.woff',style:'italic' }]})
 
 /*
   @font-face {
@@ -46,6 +49,11 @@ import '../styles/css/global.css'
 export default function MyApp({ Component, pageProps }) {
 	return (
 		<>
+		<style jsx global>{`
+        :root {
+          --font-serif: ${SangBleuEmpire.style.fontFamily};
+        }
+      `}</style>
 		<LazyMotion features={domAnimation}>
 			<Layout className={SangBleuEmpire.className}>
 				<Component {...pageProps} />
